@@ -14,6 +14,5 @@ To verify images use the following command:
 
 ```
 # verify the signature on sigstore/git:latest
-$ COSIGN_REPOSITORY=s3n29t/signatures cosign verify sigstore/git:latest \
-   --key https://raw.githubusercontent.com/s3n29t/keyring/refs/heads/main/public/sigstore/latest.pub | jq .
+$ COSIGN_REPOSITORY=s3n29t/signatures cosign verify sigstore/git:latest --key https://raw.githubusercontent.com/s3n29t/keyring/refs/heads/main/public/sigstore/latest.pub | jq .
 ```
